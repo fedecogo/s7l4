@@ -63,6 +63,9 @@ const createCard = function (ima) {
     newCard.innerHTML = `
         <img src="${img.src.large}" class="card-img-top">
         <div class="card-body d-flex flex-column justify-content-between">
+        
+           <a href="index.html" class="btn btn-outline-info mb-2">info</a>
+
            <button class="btn btn-outline-warning" onclick="hideMe(event)">hide</button>
             <p>${img.id}</p>
            </div>

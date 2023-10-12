@@ -1,3 +1,7 @@
+const addressBarContent = new URLSearchParams(location.search)
+const eventId = addressBarContent.get()
+console.log(eventId) 
+
 const getApi = function () {
     fetch('https://api.pexels.com/v1/search?query=cars', {
         headers: {
